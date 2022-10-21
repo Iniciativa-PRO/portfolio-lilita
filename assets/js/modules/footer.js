@@ -3,14 +3,15 @@ export function footer(){
 
   const footer = `
   <section class="l-contact">
-    <section>
+    
+    <section class="l-social__media">
       <h2 class="c-title">Rede Sociais</h2>
       <span>Instagram</span>
       <span>Facebook</span>
       <span>Linkedin</span>
     </section>
 
-    <form>
+    <form class="l-form">
       <h2 class="c-title">Contatos</h2>
 
       <div class="c-input__container">
