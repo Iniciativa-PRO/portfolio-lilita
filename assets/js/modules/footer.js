@@ -32,7 +32,7 @@ export function footer(){
         <textarea rows="4"></textarea>
       </div>
 
-      <button>Enviar</button>
+      <button class="c-button">Enviar</button>
     </form>
   </section>
 
