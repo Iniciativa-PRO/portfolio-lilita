@@ -7,11 +7,11 @@ export function navbar(){
   <nav>
     <ul>
       <li>Accueil</li>
-      <li>Collaborations</li>
-      <li>Formatrice d'espagnol</li>
-      <li>Arts Plastiques</li>
-      <li>Design Graphique</li>
-      <li>Contact</li>
+      <li><a href="page/collaborations/index.html">Collaborations</a></li>
+      <li><a href="page/formatricedespagnol/index.html">Formatrice d'espagnol</a></li>
+      <li><a href="page/artsplastiques/index.html">Arts Plastiques</a></li>
+      <li><a href="page/designgraphique/index.html">Design Graphique</a></li>
+      <li><a href="#contact/index.html">Contact</a></li>
     </ul>
   </nav>
   `;
