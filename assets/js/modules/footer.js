@@ -4,14 +4,28 @@ export function footer(){
   const footer = `
   <section class="l-contact">
     
-    <section class="l-social__media">
+    <section class="l-fallow-me">
       <h2 class="c-title">Rede Sociais</h2>
-      <span>Instagram</span>
-      <span>Facebook</span>
-      <span>Linkedin</span>
+
+      <div class="c-social-media">
+        <span>
+          <img src="./assets/img/twitter.svg" />
+          <a href="#">Twitter</a>
+        </span>
+
+        <span>
+          <img src="./assets/img/linkedin.svg" />
+          <a href="#">Linkedin</a>
+        </span>
+
+        <span>
+          <img src="./assets/img/facebook.svg" />
+          <a href="#">Facebook</a>
+        </span>
+      </div>
     </section>
 
-    <form class="l-form">
+    <form id="contact" class="l-form">
       <h2 class="c-title">Contatos</h2>
 
       <div class="c-input__container">

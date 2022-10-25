@@ -1,0 +1,24 @@
+.c-social-media {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $gray;
+    font-size: 20px;
+    width: 100px;
+
+    span {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: auto;
+            width: 30px;
+        }
+
+        a {
+            color: $gray;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+    }
+}
