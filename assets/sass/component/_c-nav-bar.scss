@@ -1,0 +1,17 @@
+.c-nav-bar, nav, ul, li, a {
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: -17px;
+   float: right;  
+   color: $gray;
+  
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 40px;
+    
+}
+
