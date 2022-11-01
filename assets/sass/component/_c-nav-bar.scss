@@ -1,17 +1,36 @@
-.c-nav-bar, nav, ul, li, a {
-
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: -17px;
-   float: right;  
-   color: $gray;
-  
+.c-navbar {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1245px;
 }
 
-.nav__links li {
-    display: inline-block;
-    padding: 0px 40px;
-    
+.nav__links {
+    display: flex;
+    flex-direction: row;
 }
 
+.nav__list {
+    display: flex;
+    height: 45px;
+    padding: 10px;
+    margin: 4px; 
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: $purple;
+        border-radius: 8px;
+
+        .nav__item {
+            color: $white-gray-light;
+        }
+    }
+}
+
+.nav__item {
+    color: $gray; 
+}
