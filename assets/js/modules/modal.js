@@ -17,16 +17,19 @@ let imgModal = (src) => {
     const modal = document.createElement("div");
     modal.setAttribute("class", "modal");
     //adicionando o modal à seção principal
-    document.querySelector(".main").append(modal);
+    document.querySelector("body").append(modal);
     //adcionando a imagem ao modal
     const newImage = document.createElement("img");
     newImage.setAttribute("src", src);
+    
     //criando o botao fechar
     const closeBtn = document.createElement("i");
     closeBtn.setAttribute("class", "fas fa-times closeBtn");
+
     // funcao fechar
-    closeBtn.onclick = () => {
+    modal.onclick = () => {
         modal.remove();
     };
+
     modal.append(newImage, closeBtn);
 };
