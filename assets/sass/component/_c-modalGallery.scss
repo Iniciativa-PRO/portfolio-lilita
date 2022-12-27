@@ -56,7 +56,7 @@
     }
 }
 .modal img {
-    width: 50%;
+    width: 65%;
     object-fit: cover;
 }
 
@@ -64,10 +64,24 @@
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .modal img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .modal img {
+        width: 90%;
+    }
 }
 
 @media (max-width: 550px) {
     .gallery {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .modal img {
+        width: 100%;
     }
 }

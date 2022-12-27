@@ -1,13 +1,18 @@
+@import '../base/colors';
+
 .c-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     border-radius: 5px;
-    background-color: #AA093E;
+    background-color: $red;
     height: 50px;
-    color: #f8f8f8;
+    color: $white-gray-light;
     font-size: 20px;
     transition: background-color .4s ease-in-out;
 
     &:hover {
-        background-color: #7D1A5D;
+        background-color: $purple;
     }
 }

@@ -6,3 +6,9 @@
     max-width: 1245px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 720px) {
+    .l-contact {
+        flex-direction: column;
+    }
+}

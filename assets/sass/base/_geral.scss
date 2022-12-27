@@ -1,0 +1,21 @@
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: $white-gray;
+}
+
+main {
+    max-width: 1245px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        .c-button {
+            width: 250px;
+        }
+ 
+    }
+}
