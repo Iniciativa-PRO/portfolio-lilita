@@ -1,7 +1,16 @@
+$color-font: $gray;
+$background: #F4F3F4;
+$background-footer: $purple-light;
+$background-input: $white-gray;
+$color-border-gallery-items: $white-gray-light;
+$color-background-gallery-image: $background;
+
 :root {
     --color-background: #{$background};
     --color-background-footer: #{$background-footer};
     --color-background-input: #{$background-input};
     
     --color-text: #{$color-font};
+    --color-background-gallery-image: #{$color-background-gallery-image};
+    --color-border-gallery-items: #{$color-border-gallery-items};
 }

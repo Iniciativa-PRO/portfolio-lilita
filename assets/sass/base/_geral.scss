@@ -1,6 +1,8 @@
 html {
     font-family: 'Inter', sans-serif;
     background-color: $white-gray;
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
 
 main {
@@ -8,7 +10,7 @@ main {
     max-width: 1245px;
     width: 100%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 50px 20px;
     box-sizing: border-box;
 }
 

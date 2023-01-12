@@ -1,7 +1,16 @@
+$color-font-dark: #F8F8F8;
+$background-dark: #0A0A0A;
+$background-footer-dark: #121212;
+$background-input-dark: $gray;
+$color-border-gallery-items-dark: $gray;
+$color-background-gallery-image-dark: $background-footer-dark;
+
 .dark:root {
     --color-background: #{$background-dark};
     --color-background-footer: #{$background-footer-dark};
     --color-background-input: #{$background-input-dark};
     
     --color-text: #{$color-font-dark};
+    --color-background-gallery-image: #{$color-background-gallery-image-dark};
+    --color-border-gallery-items: #{$color-border-gallery-items-dark};
 }

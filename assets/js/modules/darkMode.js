@@ -1,5 +1,14 @@
+const main = document.querySelector("main");
+
+const btnMode = `
+    <button class="c-button__dark__mode dark-mode" data-mode="dark"></button>
+`
+
+main.insertAdjacentHTML("afterbegin", btnMode)
+
 const btnDarkMode = document.querySelector('[data-mode="dark"]')
 const root = document.querySelector("html");
+
 
 function checkDarkMode(){
     const modeEnable = localStorage.getItem("lilita")
