@@ -1,3 +1,4 @@
+// Global
 $blue: #67A8E7;
 $red: #AA093E;
 $purple: #7D1A5D;
@@ -7,3 +8,20 @@ $gray: #383838;
 $gray-light: #6D6D6D;
 $white-gray: #F4F3F4;
 $white-gray-light: #F8F8F8;
+
+// Light
+$color-font: $gray;
+$background: #F4F3F4;
+$background-footer: $purple-light;
+$background-input: $white-gray;
+
+// Dark
+$color-font-dark: #F8F8F8;
+$background-dark: #0A0A0A;
+$background-footer-dark: #121212;
+$background-input-dark: $gray;
+
+html {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}

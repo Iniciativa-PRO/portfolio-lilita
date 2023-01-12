@@ -3,24 +3,26 @@
   margin:  10px 0 10px 0;
 
   .c-input__label {
-    color: $gray-light;
+    color: var(--color-text);
     font-size: 16px;
     margin: 4px;
     position: absolute;
     top: 20px;
+    left: 6px;
     cursor: text;
   }
 
   .c-input, .c-textarea {
-    background-color: $white-gray-light;
+    background-color: var(--color-background-input);
     border-radius: 4px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
-    color: $gray-light;
+    border: 0;
+    color: var(--color-text);
     display: flex;
     height: 56px;
     outline: 0;
-    padding: 12px 4px 4px 4px;
+    padding: 12px 4px 4px 10px;
     width: 100%;
 
     &:focus ~ .c-input__label,
@@ -33,6 +35,6 @@
   .c-textarea {
     height: 120px;
     width: 100%;
-    padding: 22px 4px 4px 4px;
+    padding: 22px 4px 4px 10px;
   }
 }
