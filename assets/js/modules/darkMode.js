@@ -1,5 +1,5 @@
 document.querySelector("main").insertAdjacentHTML("afterbegin", `
-    <button class="c-button__dark__mode dark-mode" data-mode="dark">
+    <button class="c-button__dark__mode light-mode" data-mode="dark">
     </button>
 `)
 
@@ -11,35 +11,33 @@ function checkDarkMode(){
 
     if(modeEnable == "dark"){
         root.classList.add("dark")
-        btnDarkMode.classList.add('light-mode')
-        btnDarkMode.classList.remove('dark-mode')
+        btnDarkMode.classList.add('dark-mode')
+        btnDarkMode.classList.remove('light-mode')
     }
 }
 
 function darkMode(){
-    btnDarkMode.classList.add('light-mode')
-    btnDarkMode.classList.remove('dark-mode')
+    btnDarkMode.classList.add('dark-mode')
+    btnDarkMode.classList.remove('light-mode')
     localStorage.setItem("lilita", "dark")
+
 }
 
 function lightMode(){
-    btnDarkMode.classList.add('dark-mode')
-    btnDarkMode.classList.remove('light-mode')
-    localStorage.removeItem("lilita")
+    btnDarkMode.classList.add('light-mode')
+    btnDarkMode.classList.remove('dark-mode')
+    localStorage.removeItem("lilita")  
 }
 
-export function darkModeTheme(){
-    checkDarkMode()
+checkDarkMode()
 
-    btnDarkMode.addEventListener('click', () => {
-        root.classList.toggle("dark")
-    
-        if(root.classList.contains("dark")) {
-            darkMode()
-        } else {
-            lightMode()
-        }
-    })
-    
-    
-}
+btnDarkMode.addEventListener('click', () => {
+    root.classList.toggle("dark")
+
+    if(root.classList.contains("dark")) {
+        darkMode()
+    } else {
+       lightMode()
+    }
+})
+

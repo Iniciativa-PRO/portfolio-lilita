@@ -16,14 +16,14 @@
 
 .dark-mode {
     @include base-dark-mode();
-    border: 1.6px solid black;
-    background-image: url('../img/btn-icon-dark.svg');
+    border: 1.6px solid white;
+    background-image: url('../img/btn-icon-light.svg');
 }
 
 .light-mode {
     @include base-dark-mode();
-    border: 1.6px solid white;
-    background-image: url('../img/btn-icon-light.svg');
+    border: 1.6px solid black;
+    background-image: url('../img/btn-icon-dark.svg');
 }
 
 @media screen and (max-width: 820px) {
