@@ -1,14 +1,10 @@
-const main = document.querySelector("main");
-
-const btnMode = `
-    <button class="c-button__dark__mode dark-mode" data-mode="dark"></button>
-`
-
-main.insertAdjacentHTML("afterbegin", btnMode)
+document.querySelector("main").insertAdjacentHTML("afterbegin", `
+    <button class="c-button__dark__mode dark-mode" data-mode="dark">
+    </button>
+`)
 
 const btnDarkMode = document.querySelector('[data-mode="dark"]')
 const root = document.querySelector("html");
-
 
 function checkDarkMode(){
     const modeEnable = localStorage.getItem("lilita")
@@ -32,14 +28,18 @@ function lightMode(){
     localStorage.removeItem("lilita")
 }
 
-btnDarkMode.addEventListener('click', () => {
-    root.classList.toggle("dark")
+export function darkModeTheme(){
+    checkDarkMode()
 
-    if(root.classList.contains("dark")) {
-        darkMode()
-    } else {
-        lightMode()
-    }
-})
-
-checkDarkMode()
+    btnDarkMode.addEventListener('click', () => {
+        root.classList.toggle("dark")
+    
+        if(root.classList.contains("dark")) {
+            darkMode()
+        } else {
+            lightMode()
+        }
+    })
+    
+    
+}
