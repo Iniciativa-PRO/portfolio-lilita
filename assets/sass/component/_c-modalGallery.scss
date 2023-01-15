@@ -22,14 +22,21 @@
 .modal {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.733);
     margin-top: -1px;
-
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     animation: zoom 0.3s ease-in-out;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .closeBtn {
@@ -41,11 +48,13 @@
     margin: 20px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+
+    &:hover {
+        color: rgb(255, 255, 255);
+    }
 }
 
-.closeBtn:hover {
-    color: rgb(255, 255, 255);
-}
+
 
 @keyframes zoom {
     from {
@@ -55,33 +64,25 @@
         transform: scale(1);
     }
 }
-.modal img {
-    width: 65%;
-    object-fit: cover;
-}
 
 @media (max-width: 950px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .modal img {
-        width: 80%;
-    }
 }
 
-@media screen and (max-width: 720px) {
-    .modal img {
-        width: 90%;
-    }
-}
+// @media screen and (max-width: 720px) {
+//     .modal img {
+//         width: 90vh;
+//     }
+// }
 
 @media (max-width: 550px) {
     .gallery {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .modal img {
-        width: 100%;
-    }
+    // .modal img {
+    //     width: 100vh;
+    // }
 }

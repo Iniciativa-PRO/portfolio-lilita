@@ -32,11 +32,28 @@ function browsersyncReload(cb){
 function watchTask(){
   watch('**/*', browsersyncReload);
   watch(['assets/sass/**/*.scss'], series(scssTask, browsersyncReload));
+  watch(['assets/img/**/*.png', 'assets/img/**/*.jpg'], series(images));
 }
+
+// Image optimized
+const webp = require('gulp-webp');
+const imageminWebp = require('imagemin-webp');
+const clone = require('gulp-clone');
+const clonesink = clone.sink();
+
+function images() {
+    return src('./assets/img/**/*') // optimize images before converting
+        .pipe(clonesink) // start stream
+        .pipe(webp()) // convert images to webp and save a copy of the original format
+        .pipe(clonesink.tap()) // close stream and send both formats to dist
+        .pipe(dest('assets/image'));
+};
+
 
 // Default Gulp task
 exports.default = series(
   scssTask,
   browsersyncServe,
-  watchTask
+  watchTask,
+  images,
 );

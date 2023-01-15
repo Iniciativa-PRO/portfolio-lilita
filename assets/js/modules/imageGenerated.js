@@ -4,8 +4,8 @@ export function imageGenerated(path, totalImage){
         const template = `
         <div class="gallery__item">
             <img 
-            srcset="${path}thumb/${index}.webp"
-            src="${path}original/${index}.webp"
+            srcset="../../assets/image/${path}/thumb/${index}.webp"
+            src="../../assets/image/${path}/original/${index}.webp"
             alt="" class="gallery-items">
         </div>
         `
