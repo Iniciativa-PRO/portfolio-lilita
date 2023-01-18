@@ -7,7 +7,7 @@ const browsersync = require('browser-sync').create();
 
 // Sass Task
 function scssTask(){
-  return src('assets/sass/style.scss', { sourcemaps: true })
+  return src('src/sass/style.scss', { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
     .pipe(dest('assets/css', { sourcemaps: '.' }));
@@ -31,8 +31,8 @@ function browsersyncReload(cb){
 // Watch Task
 function watchTask(){
   watch('**/*', browsersyncReload);
-  watch(['assets/sass/**/*.scss'], series(scssTask, browsersyncReload));
-  watch(['assets/img/**/*.png', 'assets/img/**/*.jpg'], series(images));
+  watch(['src/sass/**/*.scss'], series(scssTask, browsersyncReload));
+  watch(['src/img/**/*.png', 'src/img/**/*.jpg'], series(images));
 }
 
 // Image optimized
@@ -42,13 +42,12 @@ const clone = require('gulp-clone');
 const clonesink = clone.sink();
 
 function images() {
-    return src('./assets/img/**/*') // optimize images before converting
-        .pipe(clonesink) // start stream
+    return src('./src/img/**/*') // optimize images before converting
+        //  .pipe(clonesink) // start stream
         .pipe(webp()) // convert images to webp and save a copy of the original format
-        .pipe(clonesink.tap()) // close stream and send both formats to dist
+        // .pipe(clonesink.tap()) // close stream and send both formats to dist
         .pipe(dest('assets/image'));
 };
-
 
 // Default Gulp task
 exports.default = series(

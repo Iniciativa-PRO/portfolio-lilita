@@ -1,0 +1,33 @@
+@import '../abstract/dark-mode.scss';
+
+.c-button__dark__mode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    top: 0;
+    right: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dark-mode {
+    @include base-dark-mode();
+    border: 1.6px solid white;
+    background-image: url('../image/btn-icon-light.svg');
+}
+
+.light-mode {
+    @include base-dark-mode();
+    border: 1.6px solid black;
+    background-image: url('../image/btn-icon-dark.svg');
+}
+
+@media screen and (max-width: 820px) {
+    .c-button__dark__mode {
+        top: -20rem;
+    }
+}

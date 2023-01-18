@@ -1,10 +1,9 @@
 export function navbar(){
-  const header = document.querySelector("header");
-
-  const navbar = `
+  return (`
+  <header>
   <section class="l-container">
     <nav class="c-navbar">
-      <img class="c-logo" src="/assets/img/logoValerie.png" alt="Logomarca Valerie Designs" height="40px">
+      <img class="c-logo" src="/assets/image/logoValerie.webp" alt="Logomarca Valerie Designs" height="40px">
 
       <ul class="nav__links">
         <li class="nav__list">
@@ -12,19 +11,19 @@ export function navbar(){
         </li>
 
         <li class="nav__list">
-          <a class="nav__item" href="/page/collaborations/index.html">Collaborations</a>
+          <a class="nav__item" href="/?page=collaborations">Collaborations</a>
         </li>
 
         <li class="nav__list">
-          <a class="nav__item" href="/page/formatricedespagnol/index.html">Formatrice d'espagnol</a>
+          <a class="nav__item" href="/?page=formatricedespagnol">Formatrice d'espagnol</a>
         </li>
 
         <li class="nav__list">
-          <a class="nav__item" href="/page/artsplastiques/index.html">Arts Plastiques</a>
+          <a class="nav__item" href="/?page=artsplastiques">Arts Plastiques</a>
         </li>
 
         <li class="nav__list">
-          <a class="nav__item" href="/page/designgraphique/index.html">Design Graphique</a>
+          <a class="nav__item" href="/?page=designgraphique">Design Graphique</a>
         </li>
 
         <li class="nav__list">
@@ -33,8 +32,7 @@ export function navbar(){
       </ul>
     </nav>
   </section>
-  `;
-
-  header.insertAdjacentHTML("afterbegin", navbar);
+  </header>
+  `)
 };
 

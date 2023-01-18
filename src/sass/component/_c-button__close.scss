@@ -1,0 +1,15 @@
+.c-button__close {
+    color: rgba(255, 255, 255, 0.87);
+    font-size: 25px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    height: 30px;
+    width: 30px;
+    background: url("../image/close.svg");
+
+    &:hover {
+        color: rgb(255, 255, 255);
+    }
+}
+

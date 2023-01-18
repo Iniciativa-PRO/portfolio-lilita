@@ -1,7 +1,6 @@
 export function footer(){
-  const header = document.querySelector("footer");
-
-  const footer = `
+  return(`
+  <footer>
   <section class="l-contact">
     
     <section class="l-fallow-me">
@@ -9,17 +8,17 @@ export function footer(){
 
       <div class="c-social-media">
         <span>
-          <img src="/assets/img/twitter.svg" />
+          <img src="/assets/image/twitter.svg" />
           <a href="#">Twitter</a>
         </span>
 
         <span>
-          <img src="/assets/img/linkedin.svg" />
+          <img src="/assets/image/linkedin.svg" />
           <a href="#">Linkedin</a>
         </span>
 
         <span>
-          <img src="/assets/img/facebook.svg" />
+          <img src="/assets/image/facebook.svg" />
           <a href="#">Facebook</a>
         </span>
       </div>
@@ -53,8 +52,6 @@ export function footer(){
   </section>
 
   <section class="c-copyright">&copy; Copyright</section>
-  
-  `;
-
-  header.insertAdjacentHTML("afterbegin", footer);
+  </footer>
+  `)
 };
