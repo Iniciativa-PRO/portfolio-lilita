@@ -1,0 +1,11 @@
+.c-notfound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        max-width: 560px;
+    }
+}

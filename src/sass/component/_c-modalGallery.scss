@@ -33,7 +33,7 @@
     
     img {
         max-width: 100%;
-        height: auto;
+        min-height: 100vh;
         animation: zoom 0.3s ease-in-out;
     }
 

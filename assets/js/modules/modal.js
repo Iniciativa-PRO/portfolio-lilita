@@ -25,7 +25,7 @@ function modal(){
         
         //criando o botao fechar
         const closeBtn = document.createElement("i");
-        closeBtn.setAttribute("class", "fas fa-times c-button__close");
+        closeBtn.setAttribute("class", "fas fa-times fa-2x c-button__close");
 
         // funcao fechar
         modal.onclick = () => {

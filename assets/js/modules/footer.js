@@ -8,17 +8,17 @@ export function footer(){
 
       <div class="c-social-media">
         <span>
-          <img src="/assets/image/twitter.svg" />
+          <i class="fa-brands fa-twitter"></i>
           <a href="#">Twitter</a>
         </span>
 
         <span>
-          <img src="/assets/image/linkedin.svg" />
+          <i class="fa-brands fa-linkedin-in"></i>
           <a href="#">Linkedin</a>
         </span>
 
         <span>
-          <img src="/assets/image/facebook.svg" />
+          <i class="fa-brands fa-facebook-f"></i>
           <a href="#">Facebook</a>
         </span>
       </div>

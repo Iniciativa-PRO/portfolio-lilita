@@ -21,16 +21,17 @@
     .nav__list {
         display: flex;
         height: 45px;
-        padding: 10px;
+        padding: 0px;
         margin: 4px; 
         box-sizing: border-box;
         justify-content: center;
         align-items: center;
+        border-radius: 8px;
         
     
         &:hover {
             background-color: $purple;
-            border-radius: 8px;
+            transition: .5s ease-out;
     
             .nav__item {
                 color: $white-gray-light;
@@ -39,9 +40,26 @@
     }
     
     .nav__item {
+        display: flex;
+        padding: 10px;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
         color: var(--color-text); 
     }
+
+    .active{
+        background-color: $red;
+        color: $white-gray-light;
+
+        .nav__item {
+            color: $white-gray-light;
+        }
+    }
 }
+
+
 
 
 

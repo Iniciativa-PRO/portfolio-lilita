@@ -8,10 +8,17 @@
     span {
         display: flex;
         align-items: center;
+        margin-top: 10px;
+        width: 100px;
 
-        img {
-            height: auto;
-            width: 30px;
+        &:hover {
+            color: $gray-light;
+            transition: .3s all;
+
+            a {
+                color: $gray-light;
+                transition: .3s all;
+            }
         }
 
         a {
