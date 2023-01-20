@@ -1,9 +1,9 @@
-import { home } from "./page/home/index.js"
-import { notfound } from "./page/notfound/index.js"
-import { collaborations } from "./page/collaborations/index.js"
-import { artsplastiques } from "./page/artsplastiques/index.js"
-import { designgraphique } from "./page/designgraphique/index.js"
-import { formatricedespagnol } from "./page/formatricedespagnol/index.js"
+import { home } from "/page/home/index.js"
+import { notfound } from "/page/notfound/index.js"
+import { collaborations } from "/page/collaborations/index.js"
+import { artsplastiques } from "/page/artsplastiques/index.js"
+import { designgraphique } from "/page/designgraphique/index.js"
+import { formatricedespagnol } from "/page/formatricedespagnol/index.js"
 
 export function router(){
 

@@ -1,6 +1,6 @@
-import { navbar } from "./assets/js/modules/navbar.js";
-import { footer } from "./assets/js/modules/footer.js";
-import { router } from "./router.js";
+import { navbar } from "/components/navbar.js";
+import { footer } from "/components/footer.js";
+import { router } from "/router.js";
 
 function app(){
     return(`

@@ -1,43 +1,42 @@
+const modeEnable = localStorage.getItem("lilita")
+const root = document.querySelector("html");
+
 document.querySelector("main").insertAdjacentHTML("afterbegin", `
     <button class="c-button__dark__mode light-mode" data-mode="dark">
+        ${modeEnable == 'dark' 
+            ? '<i class="fa-solid fa-sun"></i>' 
+            : '<i class="fa-solid fa-moon"></i>' 
+        }
     </button>
 `)
 
-const btnDarkMode = document.querySelector('[data-mode="dark"]')
-const root = document.querySelector("html");
-
 function checkDarkMode(){
-    const modeEnable = localStorage.getItem("lilita")
-
     if(modeEnable == "dark"){
         root.classList.add("dark")
-        btnDarkMode.classList.add('dark-mode')
-        btnDarkMode.classList.remove('light-mode')
     }
 }
 
-function darkMode(){
-    btnDarkMode.classList.add('dark-mode')
-    btnDarkMode.classList.remove('light-mode')
-    localStorage.setItem("lilita", "dark")
+checkDarkMode()
 
+function darkMode(){
+    localStorage.setItem("lilita", "dark")
+    btnDarkMode.innerHTML = '<i class="fa-solid fa-sun"></i>'
 }
 
 function lightMode(){
-    btnDarkMode.classList.add('light-mode')
-    btnDarkMode.classList.remove('dark-mode')
-    localStorage.removeItem("lilita")  
+    localStorage.removeItem("lilita")
+    btnDarkMode.innerHTML = '<i class="fa-solid fa-moon"></i>'
 }
 
-checkDarkMode()
+const btnDarkMode = document.querySelector('[data-mode="dark"]')
 
 btnDarkMode.addEventListener('click', () => {
     root.classList.toggle("dark")
 
     if(root.classList.contains("dark")) {
-        darkMode()
-    } else {
-       lightMode()
-    }
+        return darkMode()
+    } 
+    
+    return  lightMode()
 })
 
