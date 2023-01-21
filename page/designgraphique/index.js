@@ -24,7 +24,7 @@ export function designgraphique(){
           </p>
       </div>
 
-      <div class="gallery" id="gallery-container">
+      <div class="gallery">
         ${imageGenerated(path, totalImage)}
       </div>
     </section>

@@ -1,7 +1,7 @@
 
 function modal(){
     //um forEachloop em todas as imagens e armazenar a url da imagem
-    const images = document.querySelectorAll(".gallery__item img");
+    const images = document.querySelectorAll(".gallery__frame__image");
     let imgSrc;
 
     //pegando as imagem com onclick
