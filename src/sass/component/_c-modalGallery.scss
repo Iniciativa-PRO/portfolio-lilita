@@ -26,15 +26,15 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.733);
-    margin-top: -1px;
     box-sizing: border-box;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     
     img {
+        display: block;
         max-width: 100%;
-        min-height: 100vh;
-        animation: zoom 0.3s ease-in-out;
+        max-height: 100%;
+        animation: zoom 0.3.5s ease-in-out;
     }
 
     .c-button__close {
