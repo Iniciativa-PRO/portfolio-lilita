@@ -5,32 +5,27 @@ import { artsplastiques } from "/page/artsplastiques/index.js"
 import { designgraphique } from "/page/designgraphique/index.js"
 import { formatricedespagnol } from "/page/formatricedespagnol/index.js"
 
+const routes = {
+    'home': home(),
+    'collaborations': collaborations(),
+    'artsplastiques': artsplastiques(),
+    'designgraphique': designgraphique(),
+    'formatricedespagnol': formatricedespagnol()
+}
+
 export function router(){
 
     var url = new URL(window.location.href);
     var data = url.searchParams.get("page")
 
-    if(data == 'home' || data == null){
-        return home()
-    }
+    if(routes.hasOwnProperty(data) || data == null){
+        if(data == null){
+            return routes.home
+        }
 
-    if(data == 'collaborations'){
-        return collaborations()
-    }
-
-    if(data == 'artsplastiques'){
-        return artsplastiques()
-    }
-
-    if(data == 'designgraphique'){
-        return designgraphique()
-    }
-
-    if(data == 'formatricedespagnol'){
-        return formatricedespagnol()
-    }
-    
-    else{
+        return routes[data]
+    } else{
         return notfound()
     }
+
 }

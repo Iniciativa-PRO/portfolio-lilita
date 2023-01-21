@@ -7,7 +7,12 @@ export function collaborations(){
     return(`
     <main>
         <section class="caixa">
-            <h2 class="c-title">Arts Plastique</h2>
+        
+            <div class="c-title__description">
+                <h2 class="c-title">Collaborations</h2>
+    
+                <p class="description"> </p>
+            </div>
 
             <div class="gallery" id="gallery-container">
                 ${imageGenerated(path, totalImage)}

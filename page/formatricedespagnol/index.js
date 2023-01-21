@@ -8,9 +8,9 @@ export function formatricedespagnol(){
     <main>
         <section class="caixa">
             <div class="c-title__description">
-            <h2 class="c-title">Formatrice</h2>
+                <h2 class="c-title">Formatrice</h2>
 
-            <p class="description"></p>
+                <p class="description"></p>
             </div>
 
             <div class="gallery" id="gallery-container">
