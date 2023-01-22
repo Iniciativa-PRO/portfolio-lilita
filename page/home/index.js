@@ -4,36 +4,36 @@ export function home(){
     <section class="l-about-me">
     <article>
       <p>
-        Educadora y diseñadora grafica, dos profesiones que hacen de mi un instrumento indispensable en la vida actual.
-        Amante de las artes plasticas, los animales, la comida, la musica y los pequeños momentos magicos con la familia y amigos.
+        Éducateur et graphiste, deux professions qui font de moi un instrument indispensable dans la vie d'aujourd'hui.
+        Amoureux des arts plastiques, des animaux, de la gastronomie, de la musique et des petits moments magiques en famille et entre amis.
       </p>
     
-      <h2>Titulos/Talleres/Formacion</h2>
+      <h2>Titres/Ateliers/Formations</h2>
       
       <p>
         Licence en Design Grahique et Design D'interaction 2020
-        Licencia en Diseño Grafico y Diseño de Interaccion. Université Polytechnique de Haut-de-France
+        Licence en design graphique et design d'interaction. Université Polytechnique des Hauts de France
     
-        Taller de Arcilla 2015-2016
-        Taller de Arcilla. Conservatorio Jose Luis Paz. Maracaibo - Venezuela
+        Atelier Argile 2015-2016
+        Atelier d'argile. Conservatoire José Luis Paz. Maracaïbo Venezuela
     
-        Taller de Dibujo 2014
-        Taller de Dibujo; Centro de Arte La Estancia. Maracaibo - Venezuela
+        Atelier Dessin 2014
+        Atelier de dessin; Centre d'art La Estancia. Maracaïbo Venezuela
     
-        Licencia en Educacion Integral 2012
-        Licencia en Educacion General Primaria. Maracaibo - Venezuela
+        Licence en Education Intégrale 2012
+        Licence d'Enseignement Primaire Général. Maracaïbo Venezuela
       </p>
     
-      <h2>Experiencia</h2>
+      <h2>expérience de travail</h2>
       <p>
-        Voluntaria/Mimbro Fundador. Asociacion Liens Tricolor. 2019-2020
-        Voluntaria/Miembro fundador. Asociacion Liens Tricolor. 06/2019 - 03/2020. *Impartiendo talleres de artes plasticas y multimedia a niños y adolescentes entre 5-15 años. Valenciennes - Francia.
+        Bénévole/Membre Fondateur. Association Tricolore Liens. 2019-2020
+        Bénévole/Membre Fondateur. Association Tricolore Liens. 06/2019 - 03/2020. *Donner des ateliers d'arts plastiques et multimédia aux enfants et adolescents de 5 à 15 ans. Valenciennes - France.
     
-        Manejo de cuentas
-        Manejo de cuenta comercial de Instagram, donde realizo flyers publicitarios y al mismo tiempo las publico en dicha cuenta.
+        Gestion de compte
+        Gestion d'un compte Instagram commercial, où je réalise des flyers publicitaires et en même temps les publie sur ledit compte.
       </p>
     
-      <a class="c-button" href="#">Curriculo</a>
+      <a download ="" class="c-button" href="../lilitaprojet/assets/data/cv.pdf">Curriculum</a>
     </article>
     
     <img src="./assets/image/perfil.webp" alt="">
