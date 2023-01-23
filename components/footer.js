@@ -4,7 +4,7 @@ export function footer(){
   <section class="l-contact">
     
     <section class="l-fallow-me">
-      <h2 class="c-title">Rede Sociais</h2>
+      <h2 class="c-title">Réseaux sociaux</h2>
 
       <div class="c-social-media">
         <span>
@@ -14,7 +14,7 @@ export function footer(){
 
         <span>
           <i class="fa-brands fa-linkedin-in"></i>
-          <a href="#">Linkedin</a>
+          <a href="https://www.linkedin.com/in/valerie-de-felice-a7b101214/">Linkedin</a>
         </span>
 
         <span>
@@ -25,16 +25,16 @@ export function footer(){
     </section>
 
     <form id="contact" class="l-form">
-      <h2 class="c-title">Contatos</h2>
+      <h2 class="c-title">Contacts</h2>
 
       <div class="c-input__container">
         <input class="c-input" placeholder=" "/>
-        <label class="c-input__label">Nome</label>
+        <label class="c-input__label">Nom</label>
       </div>
 
       <div class="c-input__container">
         <input class="c-input" placeholder=" "/>
-        <label class="c-input__label">Sobrenome</label>
+        <label class="c-input__label">Nom de famille</label>
       </div>
 
       <div class="c-input__container">
@@ -44,10 +44,10 @@ export function footer(){
 
       <div class="c-input__container">
         <textarea class="c-textarea" type="message" placeholder=" "></textarea>
-        <label class="c-input__label">Mensagem</label>
+        <label class="c-input__label">Message</label>
       </div>
 
-      <button class="c-button">Enviar</button>
+      <button class="c-button">Envoyer</button>
     </form>
   </section>
 
