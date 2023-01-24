@@ -33,10 +33,10 @@ export function home(){
         Gestion d'un compte Instagram commercial, où je réalise des flyers publicitaires et en même temps les publie sur ledit compte.
       </p>
     
-      <a download ="" class="c-button" href="../lilitaprojet/assets/data/cv.pdf">Curriculum</a>
+      <a download ="" class="c-button" href="/data/cv.pdf">Curriculum</a>
     </article>
     
-    <img src="./assets/image/perfil.webp" alt="">
+    <img src="/assets/image/perfil.webp" alt="">
     </section>
     </main>
     `)
