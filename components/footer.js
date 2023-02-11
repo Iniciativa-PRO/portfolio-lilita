@@ -1,30 +1,39 @@
 export function footer(){
   return(`
-  <footer>
+  <footer id="contact">
   <section class="l-contact">
     
-    <section class="l-fallow-me">
+    <article class="l-fallow-me">
       <h2 class="c-title">Réseaux sociaux</h2>
 
       <div class="c-social-media">
         <span>
-          <i class="fa-brands fa-twitter"></i>
-          <a href="#">Twitter</a>
+          <i class="fa-xl fa-brands fa-instagram"></i>
+          <a target="_blank" href="https://www.instagram.com/vdf.designs/">VDF Designs</a>
         </span>
 
         <span>
-          <i class="fa-brands fa-linkedin-in"></i>
-          <a href="https://www.linkedin.com/in/valerie-de-felice-a7b101214/">Linkedin</a>
+          <i class="fa-xl fa-brands fa-instagram"></i>
+          <a target="_blank" href="https://www.instagram.com/formatrice.creative.espagnol/">
+            Formatrice Creative Espagnol
+          </a>
         </span>
 
         <span>
-          <i class="fa-brands fa-facebook-f"></i>
-          <a href="#">Facebook</a>
+          <i class="fa-xl fa-brands fa-linkedin-in"></i>
+          <a target="_blank" href="https://www.linkedin.com/in/valerie-de-felice-a7b101214/">Linkedin</a>
         </span>
       </div>
-    </section>
+    </article>
 
-    <form id="contact" class="l-form">
+    <article class="c-contact">
+      <h2 class="c-title">Contactez-moi</h2>
+      <span>
+        <i class="fa-xl fa-solid fa-envelope"></i>
+        <a href="mailto:valeriedfg@hotmail.com">valeriedfg@hotmail.com</a>
+      </span>
+    </article>
+    <!-- <form id="contact" class="l-form">
       <h2 class="c-title">Contacts</h2>
 
       <div class="c-input__container">
@@ -48,10 +57,14 @@ export function footer(){
       </div>
 
       <button class="c-button">Envoyer</button>
-    </form>
+    </form> -->
   </section>
 
-  <section class="c-copyright">&copy; Copyright</section>
+  <section class="c-copyright">
+    <span>&copy; Copyright 2023 -</span>
+
+    <a href="https://github.com/Iniciativa-PRO" target="_blank" >Iniciativa PRO</a>
+  </section>
   </footer>
   `)
 };

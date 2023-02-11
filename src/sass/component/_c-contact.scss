@@ -1,18 +1,13 @@
-.c-social-media {
+.c-contact {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: 20px;
 
-
     span {
         display: flex;
         align-items: center;
-        margin-top: 20px;
-
-        .fa-instagram {
-            font-weight: bold;
-        }
+        margin-top: 10px;
 
         &:hover {
             color: $gray-light;
@@ -25,6 +20,7 @@
         }
 
         a {
+
             color: var(--color-text);
             margin-left: 8px;
             cursor: pointer;

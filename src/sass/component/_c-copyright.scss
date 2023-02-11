@@ -7,4 +7,15 @@
     width: 100%;
     color: $white-gray-light;
     font-size: 20px;
+
+    a {
+        color: $white-gray-light;
+        margin-left: 8px;
+        cursor: pointer;
+
+        &:hover {
+            color: $gray-light;
+            transition: .3s all;
+        }
+    }
 }
